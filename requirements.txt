@@ -1,2 +1,4 @@
 sympy
 streamlit
+numpy
+pandas
