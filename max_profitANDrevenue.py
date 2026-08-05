@@ -86,7 +86,7 @@ with st.expander("Plot Visualization", expanded=True):
     # st.warning("This expander is open when the page loads.")
     # Create traces for each dataset
     linear_re_d_pr=pd.DataFrame({'demand': y_demand_output, 'price': x_price_input})
-    
+    x_price_input_re    = np.arange(0,x_price_2,1)
     trace1 = go.Scatter(x= x_price_input,
                         y=linear_re_d_pr["price"],
                         mode="lines",
@@ -100,7 +100,7 @@ with st.expander("Plot Visualization", expanded=True):
                         line=dict(color="red"),
                         yaxis="y2" )
                         
-    trace3 = go.Scatter(x=x_price_input,
+    trace3 = go.Scatter(x=x_price_input_re,
                         y=y_revenue_output,
                         mode="lines",
                         name="revenue",
