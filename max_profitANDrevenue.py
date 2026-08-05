@@ -100,7 +100,7 @@ with st.expander("Plot Visualization", expanded=True):
                         line=dict(color="red"),
                         yaxis="y2" )
                         
-    trace3 = go.Scatter(x=x_price_input_re,
+    trace3 = go.Scatter(x=x_price_input,
                         y=y_revenue_output,
                         mode="lines",
                         name="revenue",
